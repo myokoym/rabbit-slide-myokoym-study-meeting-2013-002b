@@ -1,4 +1,4 @@
-= タイトル
+= SQL\nゼロからはじめる\nデータベース操作
 
 # : subtitle
 #    サブタイトル
@@ -6,23 +6,66 @@
    Masafumi Yokoyama
 # : institution
 #    所属
-# : content-source
-#    イベント名
-# : date
-#    2013/05/16
-# : allotted-time
-#    5m
-# : theme
-#    default
+: content-source
+   社内勉強会2013
+: date
+   2013/05/17
+: allotted-time
+   15m
+: theme
+   clear-blue
 
-= 最初のスライド
+= 動機
 
-  * 項目1
-  * 項目2
-  * 項目3
+SQLの知識は、基本情報レベルの基礎と、業務で断片的に調べただけだったので、遅ればせながらちゃんとした入門書を読みました。
 
-= 二番目のスライド
+= COUNT関数 と NULL
 
-  # image
-  # src = https://raw.github.com/rabbit-shocker/rabbit/master/sample/lavie.png
-  # relative_height = 100
+  * COUNT(*) は、全レコード数
+  * COUNT(column) は、columnがNULLのレコードを除いた数
+
+= AVG関数 と NULL
+
+  * AVG(column) は、columnがNULLのレコードを除いた平均値
+
+= 句ごとの実行順
+
+これによって別名が使えたり使えなかったりする。
+
+  (1) (('tag:x-small'))FROM
+  (2) (('tag:x-small'))WHERE
+  (3) (('tag:x-small'))GROUP BY
+  (4) (('tag:x-small'))HAVING
+  (5) (('tag:x-small'))SELECT
+  (6) (('tag:x-small'))ORDER BY
+
+= INSERT … SELECT
+
+  * INSERT … SELECT文を使えば、テーブル同士でデータを受け渡せる。
+    * 同じテーブル内の行を複製することもできる
+    * キー重複に注意
+
+= ビュー
+
+  * ビューは、データではなくSELECT文を保持する。
+
+= スカラ・サブクエリ
+
+  * スカラ・サブクエリとは、値をひとつだけ返すサブクエリ
+  * WHERE句で、比較演算の右辺として使える
+
+= IN句とサブクエリ
+
+  * 値のリストを返すサブクエリは、IN句に記述できる。
+
+= 格言
+
+    # blockquote
+    結合の古い書き方や方言は、自分で使ってはならない。でも読めるようにはしておこう。
+
+= 参考
+
+『SQL　ゼロからはじめるデータベース操作』サポートページ
+
+    http://www.geocities.jp/mickindex/database/db_support_prg_sql.html
+
