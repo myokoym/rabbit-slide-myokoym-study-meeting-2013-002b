@@ -15,6 +15,12 @@
 : theme
    clear-blue
 
+= 書籍紹介
+
+『SQL　ゼロからはじめるデータベース操作』サポートページ
+
+    http://www.geocities.jp/mickindex/database/db_support_prg_sql.html
+
 = 動機
 
 SQLの知識は、基本情報レベルの基礎と、業務で断片的に調べただけだったので、遅ればせながらちゃんとした入門書を読みました。
@@ -65,7 +71,7 @@ SQLの知識は、基本情報レベルの基礎と、業務で断片的に調�
 
 = 参考
 
-『SQL　ゼロからはじめるデータベース操作』サポートページ
+リレーショナル・データベースの世界
 
-    http://www.geocities.jp/mickindex/database/db_support_prg_sql.html
+    http://www.geocities.jp/mickindex/database/idx_database.html
 
